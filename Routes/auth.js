@@ -3,14 +3,14 @@ const router = express.Router();
 const AuthController = require('../Controllers/auth');
 
 // Telas (GET)
-router.get('/login', AuthController.renderLogin);
-router.get('/cadastro', AuthController.renderCadastro);
+router.get('/login', authController.renderLogin);
+router.get('/cadastro', authController.renderCadastro);
 
 // Ações dos formulários (POST)
-router.post('/cadastro', AuthController.cadastrar);
-router.post('/login', AuthController.login);
+router.post('/cadastro', authController.cadastrar);
+router.post('/login', authController.login);
 
 // Logout (GET)
-router.get('/logout', AuthController.logout);
+router.get('/logout', authController.logout);
 
 module.exports = router;

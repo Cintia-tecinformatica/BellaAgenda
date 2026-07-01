@@ -3,7 +3,7 @@ const router = express.Router();
 
 const authRoutes = require('./auth');
 const appointmentRoutes = require('./appointments');
-const AppointmentController = require('../Controllers/AppointmentController');
+const AppointmentController = require('../controllers/AppointmentController');
 const authMiddleware = require('../Middleware/auth');
 
 // Rota Raiz: Se acessar "/", manda direto para o Login

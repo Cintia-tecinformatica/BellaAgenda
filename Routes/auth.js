@@ -1,16 +1,16 @@
 const express = require('express');
 const router = express.Router();
-const authController = require('../Controllers/auth');
+const authcontroller = require('../controllers/auth');
 
 // Telas (GET)
-router.get('/login', authController.renderLogin);
+router.get('/login', authcontroller.renderLogin);
 router.get('/cadastro', authController.renderCadastro);
 
 // Ações dos formulários (POST)
-router.post('/cadastro', authController.cadastrar);
-router.post('/login', authController.login);
+router.post('/cadastro', authcontroller.cadastrar);
+router.post('/login', authcontroller.login);
 
 // Logout (GET)
-router.get('/logout', authController.logout);
+router.get('/logout', authcontroller.logout);
 
 module.exports = router;

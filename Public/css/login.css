@@ -1,0 +1,129 @@
+/* Importando as fontes do Google Fonts conforme Capturar.PNG1.PNG */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fcfbf7; /* Fundo off-white sutil */
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    /* Sombra suave e elegante */
+    box-shadow: 0 10px 30px rgba(96, 96, 96, 0.08); 
+    width: 100%;
+    max-width: 420px;
+    border: 1px solid rgba(193, 170, 114, 0.2);
+}
+
+h2 {
+    font-family: 'Cinzel', serif;
+    color: #606060; /* Conforme Capturar.PNG2.PNG */
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 26px;
+    letter-spacing: 1px;
+}
+
+.form-group {
+    margin-bottom: 22px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #606060;
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+}
+
+input {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #e0dbcd;
+    border-radius: 6px;
+    font-size: 15px;
+    color: #606060;
+    background-color: #faf9f5;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #C1AA72;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(193, 170, 114, 0.15);
+}
+
+/* Efeito Gradiente Dourado Premium inspirado em Capturar.PNG2.PNG */
+button {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #b89c5a 0%, #c1aa72 50%, #9e8343 100%);
+    border: none;
+    border-radius: 6px;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: opacity 0.3s ease, transform 0.2s ease;
+    margin-top: 15px;
+    text-transform: uppercase;
+}
+
+button:hover {
+    opacity: 0.95;
+    transform: translateY(-1px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+p {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 13px;
+    color: #606060;
+}
+
+a {
+    color: #c1aa72;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 3px;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: #9e8343;
+    text-decoration: underline;
+}
+
+/* Estilização da sublogo na tela de login */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.sublogo {
+    width: 160px; /* Tamanho ideal para ficar delicada */
+    height: auto;
+    object-fit: contain;
+}

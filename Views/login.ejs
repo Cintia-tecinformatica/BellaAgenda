@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BellaAgenda - Login</title>
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Adicionando a sublogo centralizada -->
+        <div class="logo-container">
+            <img src="/img/sublogo.png" alt="Giovana Caetano Logo" class="sublogo">
+        </div>
+    <div class="container">
+        <h2>Login - BellaAgenda</h2>
+
+        <form action="/auth/login" method="POST">
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required placeholder="seu@email.com">
+            </div>
+
+            <div class="form-group">
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required placeholder="Sua senha">
+            </div>
+
+            <button type="submit">Entrar</button>
+        </form>
+
+        <p>Não tem uma conta? <a href="/auth/cadastro">Cadastre-se aqui</a></p>
+    </div>
+</body>
+</html>

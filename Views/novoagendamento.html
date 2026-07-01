@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Novo Agendamento</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<img src="images/sublogo.png" class="logo">
+
+<h1>Novo Agendamento</h1>
+
+<form id="formAgendamento">
+
+<label>Serviço</label>
+
+<select id="servico" required>
+
+<option value="">Selecione</option>
+
+</select>
+
+<label>Profissional</label>
+
+<select id="profissional" required>
+
+<option value="">Selecione</option>
+
+</select>
+
+<label>Data</label>
+
+<input type="date" id="data" required>
+
+<label>Horário</label>
+
+<select id="horario" required>
+
+<option value="">Selecione</option>
+
+<option>08:00</option>
+<option>09:00</option>
+<option>10:00</option>
+<option>11:00</option>
+<option>13:00</option>
+<option>14:00</option>
+<option>15:00</option>
+<option>16:00</option>
+<option>17:00</option>
+
+</select>
+
+<label>Observação</label>
+
+<textarea
+id="observacao"
+rows="4"
+placeholder="Opcional"></textarea>
+
+<button type="submit">
+
+Agendar
+
+</button>
+
+</form>
+
+<br>
+
+<a href="dashboard.html" class="btn-voltar">
+
+← Voltar
+
+</a>
+
+</div>
+
+<script src="js/agendamento.js"></script>
+
+</body>
+
+</html>

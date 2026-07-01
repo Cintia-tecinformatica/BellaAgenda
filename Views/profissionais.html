@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Profissionais - BellaAgenda</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<img src="images/sublogo.png" class="logo">
+
+<h1>Profissionais</h1>
+
+<form id="formProfissional">
+
+<label>Nome</label>
+
+<input
+type="text"
+id="nome"
+placeholder="Nome do profissional"
+required>
+
+<label>Especialidade</label>
+
+<input
+type="text"
+id="especialidade"
+placeholder="Ex.: Cabelos, Unhas..."
+required>
+
+<button type="submit">
+
+Cadastrar
+
+</button>
+
+</form>
+
+<hr>
+
+<h2>Profissionais Cadastrados</h2>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Nome</th>
+
+<th>Especialidade</th>
+
+<th>Ações</th>
+
+</tr>
+
+</thead>
+
+<tbody id="listaProfissionais">
+
+</tbody>
+
+</table>
+
+<br>
+
+<a href="dashboard.html" class="btn-voltar">
+
+← Voltar
+
+</a>
+
+</div>
+
+<script src="js/profissionais.js"></script>
+
+</body>
+
+</html>

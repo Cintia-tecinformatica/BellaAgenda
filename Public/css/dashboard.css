@@ -1,0 +1,212 @@
+/* Importando as fontes do Google Fonts conforme Capturar.PNG1.PNG */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fcfbf7;
+    color: #606060;
+    font-family: 'Poppins', sans-serif;
+    padding: 30px 20px;
+}
+
+/* Topo do sistema chique */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 20px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(96, 96, 96, 0.04);
+    margin-bottom: 40px;
+    border-left: 4px solid #C1AA72;
+}
+
+.main-header h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 24px;
+    color: #606060;
+    letter-spacing: 1px;
+}
+
+.btn-logout {
+    background-color: transparent;
+    color: #606060;
+    text-decoration: none;
+    padding: 8px 18px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    border: 1px solid #e0dbcd;
+    transition: all 0.2s ease;
+}
+
+.btn-logout:hover {
+    background-color: #606060;
+    color: #ffffff;
+    border-color: #606060;
+}
+
+/* Layout em Grid profissional */
+.dashboard-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media (min-width: 850px) {
+    .dashboard-container {
+        grid-template-columns: 1fr 1.6fr;
+    }
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 6px 24px rgba(96, 96, 96, 0.04);
+    height: fit-content;
+    border: 1px solid rgba(193, 170, 114, 0.1);
+}
+
+.card h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 18px;
+    margin-bottom: 25px;
+    color: #606060;
+    letter-spacing: 1px;
+    text-align: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #faf9f5;
+    /* Linha decorativa dourada abaixo do título */
+    position: relative;
+}
+
+.card h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 2px;
+    background-color: #C1AA72;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 13px;
+    color: #606060;
+}
+
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #e0dbcd;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #606060;
+    background-color: #faf9f5;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus, .form-group select:focus {
+    outline: none;
+    border-color: #C1AA72;
+    background-color: #ffffff;
+}
+
+/* Botão Salvar Dourado */
+.btn-submit {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #b89c5a 0%, #c1aa72 50%, #9e8343 100%);
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+.btn-submit:hover {
+    opacity: 0.95;
+}
+
+/* Customização da Tabela de Agendamentos */
+.table-responsive {
+    overflow-x: auto;
+}
+
+.appointments-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.appointments-table th {
+    background-color: #faf9f5;
+    color: #c1aa72;
+    font-family: 'Cinzel', serif;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 15px;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid rgba(193, 170, 114, 0.2);
+}
+
+.appointments-table td {
+    padding: 16px 15px;
+    border-bottom: 1px solid #f2eee2;
+    font-size: 14px;
+    color: #606060;
+}
+
+.appointments-table tr:hover {
+    background-color: #fdfdfb;
+}
+
+/* Botão Excluir minimalista e polido */
+.btn-delete {
+    background-color: transparent;
+    color: #be3b3b;
+    border: none;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: color 0.2s;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.btn-delete:hover {
+    color: #8c2525;
+    text-decoration: underline;
+}
+
+.empty-msg {
+    color: #606060;
+    font-style: italic;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 14px;
+}

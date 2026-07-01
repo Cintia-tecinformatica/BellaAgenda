@@ -1,5 +1,5 @@
 const sqlite3 = require('sqlite3').verbose();
-
+const path = require('path');
 
 
 // Cria ou conecta ao arquivo do banco na raiz do projeto

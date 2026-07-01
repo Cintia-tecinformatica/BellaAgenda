@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const AuthController = require('../Controllers/auth');
+const authController = require('../Controllers/auth');
 
 // Telas (GET)
 router.get('/login', authController.renderLogin);

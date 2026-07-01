@@ -25,7 +25,7 @@ app.use(session({
 }));
 
 // IMPORTANTE: Conecta o gerenciador de rotas unificado
-const routes = require('./routes/index');
+const routes = require('./src/routes/index');
 app.use('/', routes);
 
 // Inicializa o servidor

@@ -18,7 +18,7 @@ app.use(express.static(path.join(__dirname, 'Public')));
 
 // Configuração de Sessão
 app.use(session({
-    secret: secret: process.env.SESSION_SECRET,
+    secret: process.env.SESSION_SECRET,
     resave: false,
     saveUninitialized: false,
     cookie: { maxAge: 24 * 60 * 60 * 1000 } // 1 dia

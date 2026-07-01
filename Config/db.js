@@ -1,5 +1,6 @@
 const sqlite3 = require('sqlite3').verbose();
-const path = require('path');
+
+const dbPath = path.resolve(__dirname, '../bellaagenda.db');
 
 // Cria ou conecta ao arquivo do banco na raiz do projeto
 const dbPath = path.resolve(__dirname, '../bellaagenda.db');
